@@ -4,7 +4,7 @@ export function Photo() {
     <div className={styles.container}>
       <img
         className={styles.foto}
-        src="./src/assets/images/foto.jpg"
+        src="https://i.ibb.co/ySmWXWF/IMG-7518.jpg"
         alt="foto"
         width={124}
       />
