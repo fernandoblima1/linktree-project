@@ -1,0 +1,14 @@
+.icon{
+  font-size: 1.5em;
+  color: var(--button-icon-color);
+  transition: backgroun-color 0.25s;
+}
+
+.toggleButton{
+  display: flex;
+  background-color: transparent;
+  border: 0;
+  color: var(--button-text-color);
+  cursor: pointer;
+  transition: all 0.25s;
+}

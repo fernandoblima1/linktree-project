@@ -1,0 +1,57 @@
+.divAnimated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.divAnimated::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient(90deg, var(--body-color) 10%,rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.divAnimated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(-90deg, var(--body-color) 10%,rgba(0, 0, 0, 0) 100%);
+  right: 0;
+  z-index: 1;
+}
+
+@keyframes moveLeft {
+  0% {
+      transform: translateX(0px);
+  }
+  100% {
+      transform: translateX(-392px);
+  }
+}
+
+.iconList {
+  animation: moveLeft 8s infinite linear;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+}
+
+.icon{
+  color: var(--button-text-color-secundary)
+}

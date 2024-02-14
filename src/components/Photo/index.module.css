@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  object-fit: cover;
+  border-radius: 100px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.ola{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ola span{
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.nome{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:  1rem;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.nome span{
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+.description{
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: center;
+}
+.description strong{
+  font-weight: 400;
+  color: var(--button-icon-color)
+}

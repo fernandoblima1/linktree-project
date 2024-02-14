@@ -1,0 +1,50 @@
+:root {
+  font-family: "Urbanist";
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"]{
+  --body-color: #0E0B12;
+  --text-color: #F3EFF5;
+  --text-secundary-color: #cdcdcd;
+  --button-color: #030204;
+  --button-text-color: #0E0B12;
+  --button-text-color-secundary: #6F768B;
+  --button-icon-color: #0066FF;
+}
+
+[data-theme="light"]{
+  --body-color: #F3EFF5;
+  --text-color: #0E0B12;
+  --text-secundary-color: #0E0B12;
+  --button-color: #cdcdcd;
+  --button-text-color: #F3EFF5;
+  --button-text-color-secundary: #6F768B;
+  --button-icon-color: #0066FF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--body-color);
+}
+
+button {
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
