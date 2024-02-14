@@ -19,7 +19,7 @@ export function App() {
       icon: FaGithub,
     },
     {
-      link: "https://www.linkedin.com/in/leandro-ferreira-oliveira/",
+      link: "https://www.linkedin.com/in/fernandoblima1/",
       title: "Minha carreira no LinkedIn",
       icon: FaLinkedin,
     },
