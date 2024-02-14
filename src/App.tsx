@@ -15,7 +15,7 @@ export function App() {
     },
     {
       link: "https://github.com/fernandoblima1/",
-      title: "Meus projtos no GitHub",
+      title: "Meus projetos no GitHub",
       icon: FaGithub,
     },
     {
