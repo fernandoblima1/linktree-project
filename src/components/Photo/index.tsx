@@ -1,13 +1,32 @@
+import { useState } from "react";
 import styles from "./index.module.css";
+
 export function Photo() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handlePhotoClick = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className={styles.container}>
       <img
-        className={styles.foto}
+        onClick={handlePhotoClick}
+        className={`${styles.foto} ${isModalOpen ? styles.expanded : ""}`}
         src="https://i.ibb.co/ySmWXWF/IMG-7518.jpg"
         alt="foto"
         width={124}
       />
+      {isModalOpen && (
+        <>
+          <div className={styles.modalOverlay} onClick={closeModal}></div>
+        </>
+      )}
+
       <div className={styles.header}>
         <div className={styles.ola}>
           <img
