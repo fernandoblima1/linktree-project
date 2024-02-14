@@ -46,8 +46,8 @@ export function App() {
             icon={link.icon}
           />
         ))}
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
